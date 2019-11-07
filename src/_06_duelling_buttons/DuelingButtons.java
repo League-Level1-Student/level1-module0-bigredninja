@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class DuelingButtons implements ActionListener {
@@ -59,10 +60,18 @@ public class DuelingButtons implements ActionListener {
 		// Set the PREFERRED size of the leftButton to SMALL
 
 		/* If the buttonPressed was the rightButton, do the opposite. */
-		if(){
-			
+		if(buttonPressed.equals(leftButton)){
+			rightButton.setText(" NO ,Click me!");
+			rightButton.setPreferredSize(BIG);
+			leftButton.setText("Click me!");
+			leftButton.setPreferredSize(SMALL);
+					}
+if(buttonPressed.equals(rightButton)){
+	leftButton.setText(" NO ,Click me!");
+	leftButton.setPreferredSize(BIG);
+	rightButton.setText("Click me!");
+	rightButton.setPreferredSize(SMALL);
 		}
-		
 		
 		
 		
